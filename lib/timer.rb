@@ -2,7 +2,7 @@ module Timer
   def Timer.get_time(param, callback)
     callback = method(callback)
     time_arr = []
-    n = 50
+    n = 30
     sliceArr = (0.1 * n).floor
     
     n.times do 
