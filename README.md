@@ -10,3 +10,8 @@ Makers post-course series of workshops aimed at learning/investigating how effic
 
 - All imlementations linear O(n)
 - Ruby shuffle method significantly quicker, presumably because my own code has to go through the Ruby interpreter and the native method is implmented in C behind the scenes???
+
+<div>
+<img src="images/shuffle_plot.png" />
+</div>
+
