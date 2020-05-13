@@ -3,7 +3,7 @@
 ## Introduction
 Makers post-course series of workshops aimed at learning/investigating how efficient algorithms are and use that to improve the speed of our own programmes
 
-Course Material: (Here)[https://github.com/makersacademy/course/tree/master/algorithmic_complexity]
+Course Material: [Here](https://github.com/makersacademy/course/tree/master/algorithmic_complexity)
 
 ## Shuffle
 
