@@ -14,4 +14,4 @@ const runTime = (inResolution = 50000, inMax = 1000000) => {
 };
 
 // runTime();
-runTime(50000, 1500000);
+runTime(10000, 1500000);
