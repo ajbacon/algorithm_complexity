@@ -27,6 +27,6 @@ Makers post-course series of workshops aimed at learning/investigating how effic
 - Investigated further by running same code on aws-ec2 VM and chrome browser (both lo-fi and hi-fi). These show much more consistent linear curves.
 
 <div>
-<img src="images/js_revere_plot.png" />
+<img src="images/js_reverse_plot.png" />
 </div>
 
