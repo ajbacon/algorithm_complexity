@@ -6,7 +6,7 @@ Makers post-course series of workshops aimed at learning/investigating how effic
 Course Material: [Here](https://github.com/makersacademy/course/tree/master/algorithmic_complexity)
 
 <div align="center">
-<img src="images/big_O_comparison.png" />
+<img src="images/big-o-chart.png" />
 </div>
 
 ## Shuffle
