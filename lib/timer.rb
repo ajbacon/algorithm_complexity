@@ -13,6 +13,6 @@ module Timer
     end
 
     time_arr.sort().slice!(sliceArr, (time_arr.length - 2 * sliceArr))
-    p time_arr.reduce(:+) / (time_arr.size.to_f - sliceArr)
+    1000 * (time_arr.reduce(:+) / (time_arr.size.to_f - sliceArr))
   end
 end
