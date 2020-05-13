@@ -1,5 +1,3 @@
-// const { performance } = require('perf_hooks');
-
 const getRunTime = (arr, callback) => {
   'use strict';
   const n = 30;
