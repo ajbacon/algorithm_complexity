@@ -30,3 +30,12 @@ Makers post-course series of workshops aimed at learning/investigating how effic
 <img src="images/js_reverse_plot.png" />
 </div>
 
+- JS native revers method compared againt own version
+- Node JS on mac used, smaller array sizes chosen to avoid instability seen above
+- Both exhibit linear time complexity, O(n)
+- Native method significantly faster, which is to be expected
+
+<div>
+<img src="images/js_reverse_plot2.png" />
+</div>
+
