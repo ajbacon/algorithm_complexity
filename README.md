@@ -42,6 +42,6 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 - Native method significantly faster, which is to be expected
 
 <div align="center">
-<img src="images/js_reverse_plot2.png" />
+<img src="images/reverse.png" />
 </div>
 
