@@ -1,3 +1,4 @@
+'use strict';
 // const getRunTime = require('./timer');
 
 const jsReverse = (arr) => {
@@ -8,10 +9,10 @@ const runTime = (inResolution = 50000, inMax = 1000000) => {
   const resolution = inResolution;
   const max = inMax;
   for (let elms = resolution; elms <= max; elms += resolution) {
-    arr = Array.from(new Array(elms), (x, i) => i + 1);
+    let arr = Array.from(new Array(elms), (x, i) => i + 1);
     getRunTime(arr, jsReverse);
   }
 };
 
 // runTime();
-runTime(10000, 1500000);
+runTime(5000, 100000);
