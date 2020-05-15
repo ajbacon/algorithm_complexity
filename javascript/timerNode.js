@@ -2,14 +2,17 @@ const { performance } = require('perf_hooks');
 
 const getRunTime = (arr, callback) => {
   'use strict';
-  const n = 30;
+  const n = 35;
   const trim = Math.floor(n * 0.2);
   let timeArr = [];
   for (let i = 0; i < n; i++) {
     const t0 = performance.now();
     callback(arr);
     const t1 = performance.now();
-    timeArr.push(t1 - t0);
+    // throw away first 5 results
+    if (i > 4) {
+      timeArr.push(t1 - t0);
+    }
   }
 
   timeArr = timeArr.sort((a, b) => {
