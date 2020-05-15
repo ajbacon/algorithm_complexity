@@ -39,7 +39,7 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 - JS native reverse method compared againt own version
 - Node JS on mac used, smaller array sizes (5000 - 100000, 5000 intervals) chosen to avoid instability seen above
 - Both exhibit linear time complexity, O(n)
-- Native method significantly faster, which is to be expected
+- native method marginally faster
 
 <div align="center">
 <img src="images/reverse.png" />
