@@ -37,7 +37,7 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 </div>
 
 - JS native reverse method compared againt own version
-- Node JS on mac used, smaller array sizes (5000 - 100000, 5000 intervals) chosen to avoid instability seen above
+- Node JS on mac used, smaller array sizes (5000 - 200000, 5000 intervals) chosen to avoid instability seen above
 - Both exhibit linear time complexity, O(n)
 - native method marginally faster
 
@@ -45,3 +45,13 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 <img src="images/reverse.png" />
 </div>
 
+## Sort
+
+### JavaScript
+
+- JS native sort method compared againt own version (quick sort method)
+- Node JS on mac used, array size 5000 - 200000 elements at 5000 intervals
+
+<div align="center">
+<img src="images/js_sort_plot1.png" />
+</div>
