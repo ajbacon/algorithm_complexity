@@ -55,3 +55,4 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 <div align="center">
 <img src="images/js_sort_plot1.png" />
 </div>
+
