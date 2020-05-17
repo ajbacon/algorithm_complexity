@@ -1,5 +1,4 @@
 'use strict';
-// const getRunTime = require('./timer');
 
 const jsReverse = (arr) => {
   return arr.reverse();
