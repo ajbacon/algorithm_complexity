@@ -1,4 +1,4 @@
-const getRunTime = require('./timerNode');
+const getRunTime = require('../timerNode');
 
 const jsReverse = (arr) => {
   return arr.reverse();

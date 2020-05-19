@@ -1,5 +1,5 @@
 'use strict';
-const getRunTime = require('./timerNode');
+const getRunTime = require('../timerNode');
 
 const ownSort = (arr) => {
   function swap(arr, leftIndex, rightIndex) {

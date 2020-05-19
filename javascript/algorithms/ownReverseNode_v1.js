@@ -1,5 +1,5 @@
 'use strict';
-const getRunTime = require('./timerNode');
+const getRunTime = require('../timerNode');
 
 const ownReverse = (arr) => {
   let output = arr;
