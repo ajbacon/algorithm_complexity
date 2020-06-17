@@ -27,6 +27,8 @@ const runTimer = (arr, fnc, n) => {
 };
 
 const trimOutliers = (timeArr, n, trimPercentage) => {
+  // very basic trim of both ends of the timings
+  // Attempt to remove extreme, potentially erroneous readings
   const trim = Math.floor(n * trimPercentage);
   timeArr = timeArr.sort((a, b) => {
     return a - b;
