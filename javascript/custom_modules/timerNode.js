@@ -10,6 +10,7 @@ const getRunTime = (arr, fnc, options = {}) => {
 
   const avg = average(timeArr);
   console.log(avg);
+  return avg;
 };
 
 const runTimer = (arr, fnc, n) => {

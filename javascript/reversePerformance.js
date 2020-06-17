@@ -9,9 +9,16 @@ const customReverse1 = require('./algorithms/customReverseNode_v1');
 const timerOptions = { iterations: 35, trimPercentage: 0.2 };
 const interval = 5000;
 const maxSize = 100000;
+let outFile = 'placeholder';
 
-// time native function
-shuffledArrayTimer(jsNativeReverse, interval, maxSize, timerOptions);
+const runTimers = () => {
+  // time native function
+  outFile = 'jsNativeReverse.csv';
+  shuffledArrayTimer(jsNativeReverse, outFile, interval, maxSize, timerOptions);
 
-// time custom function
-shuffledArrayTimer(customReverse1, interval, maxSize, timerOptions);
+  // time custom function
+  outFile = 'customReverse1.csv';
+  shuffledArrayTimer(customReverse1, outFile, interval, maxSize, timerOptions);
+};
+
+runTimers();

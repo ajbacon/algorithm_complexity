@@ -1,16 +1,23 @@
 const timer = require('../custom_modules/timerNode');
+const { createArrayCsvWriter } = require('csv-writer');
 
-const shuffledArrayTimer = (
+const shuffledArrayTimer = async (
   fnc,
+  outputFile,
   step = 50000,
   maxSize = 1000000,
   options = {}
 ) => {
+  console.log(`creating results for ${outputFile}...`);
+  outputArr = [];
   for (let elms = step; elms <= maxSize; elms += step) {
     let arr = Array.from(new Array(elms), (x, i) => i + 1);
     arr = shuffle(arr);
-    timer(arr, fnc, options);
+    time = timer(arr, fnc, options);
+    outputArr.push([elms, time]);
   }
+  createCsv(outputArr, outputFile);
+  console.log('...done');
 };
 
 const shuffle = (arr) => {
@@ -21,6 +28,15 @@ const shuffle = (arr) => {
     arr[j] = temp;
   }
   return arr;
+};
+
+const createCsv = async (outputArr, outputFile) => {
+  const csvWriter = createArrayCsvWriter({
+    header: ['SIZE', 'TIME '],
+    path: `csv_files/${outputFile}`,
+  });
+
+  await csvWriter.writeRecords(outputArr);
 };
 
 module.exports = shuffledArrayTimer;
