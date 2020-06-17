@@ -14,13 +14,20 @@ const getRunTime = (arr, callback) => {
       timeArr.push(t1 - t0);
     }
   }
+  const timeArr = trimOutliers(timeArr);
+  const avg = average(timeArr);
+  console.log(avg);
+};
 
+const trimOutliers = (timeArr) => {
   timeArr = timeArr.sort((a, b) => {
     return a - b;
   });
   timeArr = timeArr.slice(trim, timeArr.length - trim);
-  const avg = timeArr.reduce((a, b) => a + b, 0) / timeArr.length;
-  console.log(avg);
+};
+
+const average = (timeArr) => {
+  return timeArr.reduce((a, b) => a + b, 0) / timeArr.length;
 };
 
 module.exports = getRunTime;
