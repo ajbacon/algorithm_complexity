@@ -9,6 +9,7 @@
   "author": "a bacon",
   "license": "ISC",
   "dependencies": {
+    "array-sort": "^1.0.0",
     "csv-writer": "^1.6.0",
     "jest": "^26.0.1"
   }
