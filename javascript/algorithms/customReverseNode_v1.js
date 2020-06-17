@@ -1,9 +1,10 @@
 'use strict';
 
+const { showCompletionScript } = require('yargs');
+
 const customReverse1 = (arr) => {
-  let output = arr;
   let arrLength = arr.length;
-  let midArr = Math.floor(arrLength);
+  let midArr = Math.floor(arrLength / 2);
 
   for (let i = 0; i < midArr; i++) {
     let firstElm = i;
@@ -11,7 +12,7 @@ const customReverse1 = (arr) => {
 
     [arr[firstElm], arr[lastElm]] = [arr[lastElm], arr[firstElm]];
   }
-  return output;
+  return arr;
 };
 
 module.exports = customReverse1;
