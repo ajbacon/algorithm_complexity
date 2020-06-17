@@ -4,6 +4,7 @@
 const shuffledArrayTimer = require('./helper_methods/shuffledArrayTimer');
 const jsNativeSort = require('./algorithms/jsNativeSort');
 const customQuickSort = require('./algorithms/customQuickSort');
+const customSelectionSort = require('./algorithms/customSelectionSort');
 const arraySort = require('array-sort');
 
 // specify timing parameters
@@ -24,6 +25,16 @@ const runTimers = () => {
   // time custom quicksort function
   outFile = 'customQuickSort.csv';
   shuffledArrayTimer(customQuickSort, outFile, interval, maxSize, timerOptions);
+
+  // time custom quicksort function
+  outFile = 'customSelectionSort.csv';
+  shuffledArrayTimer(
+    customSelectionSort,
+    outFile,
+    interval,
+    30000,
+    timerOptions
+  );
 };
 
 runTimers();
