@@ -8,7 +8,7 @@ const customReverse1 = require('./algorithms/customReverseNode_v1');
 // specify timing parameters
 const timerOptions = { iterations: 35, trimPercentage: 0.2 };
 const interval = 5000;
-const maxSize = 100000;
+const maxSize = 200000;
 let outFile = 'placeholder';
 
 const runTimers = () => {
