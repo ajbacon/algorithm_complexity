@@ -13,17 +13,17 @@ const getRunTime = (arr, fnc, options = {}) => {
 };
 
 const runTimer = (arr, fnc, n) => {
-  let timeArr = [];
+  let outputArr = [];
   for (let i = 0; i < n; i++) {
     const t0 = performance.now();
     fnc(arr);
     const t1 = performance.now();
     // first runs may be unstable, throw away first 5 results
     if (i > 4) {
-      timeArr.push(t1 - t0);
+      outputArr.push(t1 - t0);
     }
   }
-  return timeArr;
+  return outputArr;
 };
 
 const trimOutliers = (timeArr, n, trimPercentage) => {
