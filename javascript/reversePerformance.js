@@ -1,3 +1,5 @@
+// Time JavaScript native reverse function against my custom version
+
 const jsNativeReverse = require('./algorithms/jsNativeReverse');
 const shuffledArrayTimer = require('./helper_methods/shuffledArrayTimer');
 
