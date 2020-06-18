@@ -1,14 +1,15 @@
 'use strict';
 // Time JavaScript native sort function against my custom version
 
-const shuffledArrayTimer = require('./helper_methods/shuffledArrayTimer');
-const jsNativeSort = require('./algorithms/jsNativeSort');
-const customQuickSort = require('./algorithms/customQuickSort');
-const customSelectionSort = require('./algorithms/customSelectionSort');
+const shuffledArrTimer = require('./helper_methods/shuffledArrayTimer');
+const nativeSort = require('./algorithms/jsNativeSort');
+const customQS = require('./algorithms/customQuickSort');
+const customMS = require('./algorithms/customMergeSort');
+const customSS = require('./algorithms/customSelectionSort');
 const arraySort = require('array-sort');
 
 // specify timing parameters
-const timerOptions = { iterations: 35, trimPercentage: 0.2 };
+const options = { iterations: 35, trimPercentage: 0.2 };
 const interval = 5000;
 const maxSize = 200000;
 let outFile = 'placeholder';
@@ -16,25 +17,23 @@ let outFile = 'placeholder';
 const runTimers = () => {
   // time native function
   outFile = 'jsNativeSort.csv';
-  shuffledArrayTimer(jsNativeSort, outFile, interval, maxSize, timerOptions);
+  shuffledArrTimer(false, nativeSort, outFile, interval, maxSize, options);
 
   // time npm array-sort module
   outFile = 'arraySortModule.csv';
-  shuffledArrayTimer(arraySort, outFile, interval, maxSize, timerOptions);
+  shuffledArrTimer(false, arraySort, outFile, interval, maxSize, options);
 
   // time custom quicksort function
   outFile = 'customQuickSort.csv';
-  shuffledArrayTimer(customQuickSort, outFile, interval, maxSize, timerOptions);
+  shuffledArrTimer(false, customQS, outFile, interval, maxSize, options);
 
-  // time custom quicksort function
+  // time custom mergesort function
+  outFile = 'customMergeSort.csv';
+  shuffledArrTimer(true, customMS, outFile, interval, maxSize, options);
+
+  // time custom selection_sort function
   outFile = 'customSelectionSort.csv';
-  shuffledArrayTimer(
-    customSelectionSort,
-    outFile,
-    interval,
-    30000,
-    timerOptions
-  );
+  shuffledArrTimer(false, customSS, outFile, interval, 30000, options);
 };
 
 runTimers();

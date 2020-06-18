@@ -2,12 +2,17 @@ const timer = require('../custom_modules/timerNode');
 const { createArrayCsvWriter } = require('csv-writer');
 
 const shuffledArrayTimer = async (
+  active,
   fnc,
   outputFile,
   step = 50000,
   maxSize = 1000000,
   options = {}
 ) => {
+  if (!active) {
+    console.log(`${outputFile} has been skipped...`);
+    return;
+  }
   console.log(`creating results for ${outputFile}...`);
   outputArr = [];
   for (let elms = step; elms <= maxSize; elms += step) {
