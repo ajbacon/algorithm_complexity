@@ -1,7 +1,7 @@
 # Algorithmic Complexity
 
 ## Introduction
-Makers post-course series of workshops aimed at learning/investigating time and space complexity of algorithms. Initially this involves developing a timing framework to measure performance, which I will use study and compare language native functions (such as 'Sort' or 'Reverse') against my own implementations. Following this I will use the timing framework to benchmark solutiuons to codewars kata and then use this information to discuss the complexity and see if I can refactor to more efficient solutions
+Makers post-course series of workshops aimed at learning/investigating time and space complexity of algorithms. Initially this involves developing a timing framework to measure performance, which I will then use study and compare language native functions (such as 'Sort' or 'Reverse') against my own implementations. Following this I will use the timing framework to benchmark solutiuons to codewars kata and then use this information to discuss the complexity and see if I can refactor to more efficient solutions
 
 Course Material: [Here](https://github.com/makersacademy/course/tree/master/algorithmic_complexity)
 
