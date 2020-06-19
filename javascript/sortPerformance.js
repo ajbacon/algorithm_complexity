@@ -2,6 +2,7 @@
 // Time JavaScript native sort function against my custom version
 
 const shuffledArrTimer = require('./helper_methods/shuffledArrayTimer');
+const orderedArrTimer = require('./helper_methods/orderedArrayTimer');
 const nativeSort = require('./algorithms/jsNativeSort');
 const customQS = require('./algorithms/customQuickSort');
 const customMS = require('./algorithms/customMergeSort');

@@ -34,16 +34,31 @@ Course Material: [Here](https://github.com/makersacademy/course/tree/master/algo
 <img src="images/reverse.png" />
 </div>
 
-## Sort
+## Sort (JavaScript/NodeJS)
 
-### JavaScript
-
-- JS native sort method compared against custom implementation (quick sort method)
+- JS native sort method compared against custom sort implementation (quicksort, mergesort and Substitution Sort methods)
+- Additional comparison of npm module 'array-sort'
 - Node JS on mac used, array size 5000 - 200000 elements at 5000 intervals
+- Selection sort has quadratic, O(n^2), time complexity, hence dwarfs the other more efficient algorithms 
 
 <div align="center">
 <img src="images/js_sort_plot1.png" />
 </div>
+
+- The plot below strips out the Selection Sort curve to provide greater clarity on the other curves
+- All curves have time complexity of  O(nlogn)
+
+<div align="center">
+<img src="images/js_sort_plot2.png" />
+</div>
+
+| Name                  | Best            | Average             | Worst               | Memory    |
+| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: |
+| **Selection sort**    | O(n^2)          | O(n^2)              | O(n^2)              | O(n)      |
+| **Quick sort**        | O(nlogn)        | O(nlogn)            | O(n^2)              | O(log(n))*|
+| **Merge sort**        | O(nlogn)        | O(nlogn)            | O(nlogn)            | O(n)      |
+
+\* implementation alters the array "in-place" hence the memory usage is the max size of the call stack
 
 ## Shuffle (Ruby)
 
